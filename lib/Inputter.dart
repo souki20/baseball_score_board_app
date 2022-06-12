@@ -7,7 +7,7 @@ class InputterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: const EdgeInsets.only(top: 50, right: 10, left: 10),
+        padding: const EdgeInsets.only(top: 50, right: 10, left: 10, bottom: 10),
         alignment: Alignment.center,
         child: Column(
           children: [
@@ -21,7 +21,7 @@ class InputterPage extends StatelessWidget {
               },
               defaultVerticalAlignment: TableCellVerticalAlignment.middle,
               children: [
-                TableRow(
+                const TableRow(
                   children: [
                     Text(
                         '学校名',
@@ -71,7 +71,7 @@ class InputterPage extends StatelessWidget {
                 ),
                 TableRow(
                   children: [
-                    Text(
+                    const Text(
                         '平塚中等',
                       textAlign: TextAlign.center,
                     ),
@@ -238,7 +238,7 @@ class InputterPage extends StatelessWidget {
                 ),
                 TableRow(
                     children: [
-                      Text(
+                      const Text(
                           '相模原中等',
                         textAlign: TextAlign.center,
                       ),
@@ -402,6 +402,135 @@ class InputterPage extends StatelessWidget {
                         child: Text('X', textAlign: TextAlign.center,),
                       ),
                     ]
+                ),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Center(
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          width: 150,
+                          height: 50,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black),
+                          ),
+                          child: const Text(
+                            '平塚中等',
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              width: 50,
+                              height: 25,
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black),
+                              ),
+                              child: const Text(
+                                '投手',
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Container(
+                              width: 100,
+                              height: 25,
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black),
+                              ),
+                              child: const Text(
+                                '加藤',
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Expanded(
+                      child: Container(
+                        width: 70,
+                        height: 75,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black),
+                        ),
+                        child: const Text(
+                          '1回表',
+                        ),
+                      ),
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          width: 150,
+                          height: 50,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black),
+                          ),
+                          child: const Text(
+                            '平塚中等',
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 25,
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black),
+                              ),
+                              child: const Text(
+                                '吉田',
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Container(
+                              width: 50,
+                              height: 25,
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black),
+                              ),
+                              child: const Text(
+                                '打者',
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ElevatedButton(
+                  onPressed: () {},
+                    child: const Text(
+                      '選手交代',
+                      textAlign: TextAlign.center,
+                    ),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text(
+                    '選手交代',
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ],
             ),
