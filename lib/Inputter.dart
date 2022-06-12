@@ -7,7 +7,7 @@ class InputterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: const EdgeInsets.only(top: 50, right: 10, left: 10),
+        padding: const EdgeInsets.only(top: 50, right: 10, left: 10, bottom: 10),
         alignment: Alignment.center,
         child: Column(
           children: [
@@ -21,7 +21,7 @@ class InputterPage extends StatelessWidget {
               },
               defaultVerticalAlignment: TableCellVerticalAlignment.middle,
               children: [
-                TableRow(
+                const TableRow(
                   children: [
                     Text(
                         '学校名',
@@ -71,7 +71,7 @@ class InputterPage extends StatelessWidget {
                 ),
                 TableRow(
                   children: [
-                    Text(
+                    const Text(
                         '平塚中等',
                       textAlign: TextAlign.center,
                     ),
@@ -238,7 +238,7 @@ class InputterPage extends StatelessWidget {
                 ),
                 TableRow(
                     children: [
-                      Text(
+                      const Text(
                           '相模原中等',
                         textAlign: TextAlign.center,
                       ),
@@ -404,6 +404,43 @@ class InputterPage extends StatelessWidget {
                     ]
                 ),
               ],
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Center(
+                // child: Table(
+                //   border: TableBorder.all(color: Colors.black),
+                //   columnWidths: const <int, TableColumnWidth>{
+                //     0: IntrinsicColumnWidth(),
+                //     // 1: FlexColumnWidth(10.0),
+                //     // 2: IntrinsicColumnWidth(),
+                //   },
+                //   defaultVerticalAlignment: TableCellVerticalAlignment.top,
+                //   children: const [
+                //     TableRow(
+                //       children: [
+                //         Text(
+                //             '平塚中等',
+                //           textAlign: TextAlign.center,
+                //         ),
+                //         Text(
+                //           '1回表',
+                //           textAlign: TextAlign.center,
+                //         ),
+                //         Text(
+                //             '相模原中等',
+                //           textAlign: TextAlign.center,
+                //         ),
+                //       ],
+                //     ),
+                //     TableRow(
+                //       children: [
+                //
+                //       ],
+                //     )
+                //   ],
+                // ),
+              ),
             ),
           ],
         ),
