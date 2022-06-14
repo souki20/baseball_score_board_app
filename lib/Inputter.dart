@@ -534,6 +534,174 @@ class InputterPage extends StatelessWidget {
                 ),
               ],
             ),
+            Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Column(
+                    children: [
+                      SizedBox(
+                        height: 25,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: const Text('リセット'),
+                          )
+                      ),
+                      Container(
+                        width: 150,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black),
+                        ),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                const Text(
+                                  'B',
+                                  style: TextStyle(
+                                    fontSize: 40,
+                                  ),
+                                ),
+                                Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black),
+                                    shape: BoxShape.circle,
+                                    color: Colors.green,
+                                  ),
+                                ),
+                                Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black),
+                                    shape: BoxShape.circle,
+                                    color: Colors.green,
+                                  ),
+                                ),
+                                Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black),
+                                    shape: BoxShape.circle,
+                                    color: Colors.green,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                const Text(
+                                  'S',
+                                  style: TextStyle(
+                                    fontSize: 40,
+                                  ),
+                                ),
+                                Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black),
+                                    shape: BoxShape.circle,
+                                    color: Colors.yellow,
+                                  ),
+                                ),
+                                Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black),
+                                    shape: BoxShape.circle,
+                                    color: Colors.yellow,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                const Text(
+                                  'O',
+                                  style: TextStyle(
+                                    fontSize: 40,
+                                  ),
+                                ),
+                                Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black),
+                                    shape: BoxShape.circle,
+                                    color: Colors.red,
+                                  ),
+                                ),
+                                Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black),
+                                    shape: BoxShape.circle,
+                                    color: Colors.red,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      SizedBox(
+                          height: 25,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: const Text('リセット'),
+                          )
+                      ),
+                      Container(
+                        width: 150,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black),
+                        ),
+                        child: Center(
+                          child: Column(
+                            children: [
+                              Image.asset('images/baseball_ground_illustration.jpeg'),
+                              // Stack(
+                              //   children: [
+                              //     Positioned(
+                              //       left: 5.0,
+                              //       top: 5.0,
+                              //       width: 5,
+                              //       height: 5,
+                              //       child: Container(
+                              //         width: 5,
+                              //         height: 5,
+                              //         color: Colors.yellow,
+                              //         // decoration: BoxDecoration(
+                              //         //   border: Border.all(color: Colors.black),
+                              //         //   shape: BoxShape.circle,
+                              //         //   color: Colors.yellow,
+                              //         // ),
+                              //       ),
+                              //     ),
+                              //   ],
+                              // ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
