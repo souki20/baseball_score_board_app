@@ -905,6 +905,14 @@ class InputterPage extends StatelessWidget {
                 ),
               ),
             ),
+            const Padding(
+              padding: EdgeInsets.only(left: 15.0, top: 10.0, right: 15.0),
+              child: TextField(
+                minLines: 4,
+                maxLines: 4,
+                decoration: InputDecoration(border: OutlineInputBorder(),),
+              ),
+            ),
           ],
         ),
       ),
