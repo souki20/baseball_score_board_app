@@ -7,7 +7,8 @@ class InputterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: const EdgeInsets.only(top: 50, right: 10, left: 10, bottom: 10),
+        padding:
+            const EdgeInsets.only(top: 50, right: 10, left: 10, bottom: 10),
         alignment: Alignment.center,
         child: Column(
           children: [
@@ -15,394 +16,430 @@ class InputterPage extends StatelessWidget {
               border: TableBorder.all(),
               columnWidths: const <int, TableColumnWidth>{
                 // 0:FlexColumnWidth(),
-                0:IntrinsicColumnWidth(),
+                0: IntrinsicColumnWidth(),
                 // 1: FlexColumnWidth(),
                 // 2: FixedColumnWidth(64),
               },
               defaultVerticalAlignment: TableCellVerticalAlignment.middle,
               children: [
-                const TableRow(
-                  children: [
-                    Text(
-                        '学校名',
+                const TableRow(children: [
+                  Text(
+                    '学校名',
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    '1',
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    '2',
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    '3',
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    '4',
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    '5',
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    '6',
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    '7',
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    '8',
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    '9',
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    '計',
+                    textAlign: TextAlign.center,
+                  ),
+                ]),
+                TableRow(children: [
+                  const Text(
+                    '平塚中等',
+                    textAlign: TextAlign.center,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                        '1',
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                        '2',
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                        '3',
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                        '4',
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                        '5',
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                        '6',
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                        '7',
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                        '8',
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                        '9',
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                        '計',
+                  ),
+                ]),
+                TableRow(children: [
+                  const Text(
+                    '相模原中等',
+                    textAlign: TextAlign.center,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                  ]
-                ),
-                TableRow(
-                  children: [
-                    const Text(
-                        '平塚中等',
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
+                      ),
+                    ),
+                    child: Text(
+                      'X',
                       textAlign: TextAlign.center,
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor: MaterialStateProperty.resolveWith(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.grey; //タップ中の色
-                            }
-                            return Colors.transparent; //通常時の色（透明色）
-                          },
-                        ),
-                      ),
-                      child: Text(
-                        'X',
-                        textAlign: TextAlign.center,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
                       ),
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor: MaterialStateProperty.resolveWith(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.grey; //タップ中の色
-                            }
-                            return Colors.transparent; //通常時の色（透明色）
-                          },
-                        ),
-                      ),
-                      child: Text(
-                        'X',
-                        textAlign: TextAlign.center,
+                    child: Text(
+                      'X',
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
                       ),
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor: MaterialStateProperty.resolveWith(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.grey; //タップ中の色
-                            }
-                            return Colors.transparent; //通常時の色（透明色）
-                          },
-                        ),
-                      ),
-                      child: Text(
-                        'X',
-                        textAlign: TextAlign.center,
+                    child: Text(
+                      'X',
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
                       ),
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor: MaterialStateProperty.resolveWith(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.grey; //タップ中の色
-                            }
-                            return Colors.transparent; //通常時の色（透明色）
-                          },
-                        ),
-                      ),
-                      child: Text('X', textAlign: TextAlign.center,),
+                    child: Text(
+                      'X',
+                      textAlign: TextAlign.center,
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor: MaterialStateProperty.resolveWith(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.grey; //タップ中の色
-                            }
-                            return Colors.transparent; //通常時の色（透明色）
-                          },
-                        ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
                       ),
-                      child: Text('X', textAlign: TextAlign.center,),
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor: MaterialStateProperty.resolveWith(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.grey; //タップ中の色
-                            }
-                            return Colors.transparent; //通常時の色（透明色）
-                          },
-                        ),
-                      ),
-                      child: Text('X', textAlign: TextAlign.center,),
+                    child: Text(
+                      'X',
+                      textAlign: TextAlign.center,
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor: MaterialStateProperty.resolveWith(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.grey; //タップ中の色
-                            }
-                            return Colors.transparent; //通常時の色（透明色）
-                          },
-                        ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
                       ),
-                      child: Text('X', textAlign: TextAlign.center,),
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor: MaterialStateProperty.resolveWith(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.grey; //タップ中の色
-                            }
-                            return Colors.transparent; //通常時の色（透明色）
-                          },
-                        ),
-                      ),
-                      child: Text('X', textAlign: TextAlign.center,),
+                    child: Text(
+                      'X',
+                      textAlign: TextAlign.center,
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor: MaterialStateProperty.resolveWith(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.grey; //タップ中の色
-                            }
-                            return Colors.transparent; //通常時の色（透明色）
-                          },
-                        ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
                       ),
-                      child: Text('X', textAlign: TextAlign.center,),
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor: MaterialStateProperty.resolveWith(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.grey; //タップ中の色
-                            }
-                            return Colors.transparent; //通常時の色（透明色）
-                          },
-                        ),
-                      ),
-                      child: Text('X', textAlign: TextAlign.center,),
+                    child: Text(
+                      'X',
+                      textAlign: TextAlign.center,
                     ),
-                  ]
-                ),
-                TableRow(
-                    children: [
-                      const Text(
-                          '相模原中等',
-                        textAlign: TextAlign.center,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
                       ),
-                      TextButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all(Colors.black),
-                          backgroundColor: MaterialStateProperty.resolveWith(
-                                (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.pressed)) {
-                                return Colors.grey; //タップ中の色
-                              }
-                              return Colors.transparent; //通常時の色（透明色）
-                            },
-                          ),
-                        ),
-                        child: Text(
-                          'X',
-                          textAlign: TextAlign.center,
-                        ),
+                    ),
+                    child: Text(
+                      'X',
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed)) {
+                            return Colors.grey; //タップ中の色
+                          }
+                          return Colors.transparent; //通常時の色（透明色）
+                        },
                       ),
-                      TextButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all(Colors.black),
-                          backgroundColor: MaterialStateProperty.resolveWith(
-                                (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.pressed)) {
-                                return Colors.grey; //タップ中の色
-                              }
-                              return Colors.transparent; //通常時の色（透明色）
-                            },
-                          ),
-                        ),
-                        child: Text(
-                          'X',
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all(Colors.black),
-                          backgroundColor: MaterialStateProperty.resolveWith(
-                                (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.pressed)) {
-                                return Colors.grey; //タップ中の色
-                              }
-                              return Colors.transparent; //通常時の色（透明色）
-                            },
-                          ),
-                        ),
-                        child: Text(
-                          'X',
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all(Colors.black),
-                          backgroundColor: MaterialStateProperty.resolveWith(
-                                (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.pressed)) {
-                                return Colors.grey; //タップ中の色
-                              }
-                              return Colors.transparent; //通常時の色（透明色）
-                            },
-                          ),
-                        ),
-                        child: Text('X', textAlign: TextAlign.center,),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all(Colors.black),
-                          backgroundColor: MaterialStateProperty.resolveWith(
-                                (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.pressed)) {
-                                return Colors.grey; //タップ中の色
-                              }
-                              return Colors.transparent; //通常時の色（透明色）
-                            },
-                          ),
-                        ),
-                        child: Text('X', textAlign: TextAlign.center,),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all(Colors.black),
-                          backgroundColor: MaterialStateProperty.resolveWith(
-                                (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.pressed)) {
-                                return Colors.grey; //タップ中の色
-                              }
-                              return Colors.transparent; //通常時の色（透明色）
-                            },
-                          ),
-                        ),
-                        child: Text('X', textAlign: TextAlign.center,),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all(Colors.black),
-                          backgroundColor: MaterialStateProperty.resolveWith(
-                                (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.pressed)) {
-                                return Colors.grey; //タップ中の色
-                              }
-                              return Colors.transparent; //通常時の色（透明色）
-                            },
-                          ),
-                        ),
-                        child: Text('X', textAlign: TextAlign.center,),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all(Colors.black),
-                          backgroundColor: MaterialStateProperty.resolveWith(
-                                (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.pressed)) {
-                                return Colors.grey; //タップ中の色
-                              }
-                              return Colors.transparent; //通常時の色（透明色）
-                            },
-                          ),
-                        ),
-                        child: Text('X', textAlign: TextAlign.center,),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all(Colors.black),
-                          backgroundColor: MaterialStateProperty.resolveWith(
-                                (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.pressed)) {
-                                return Colors.grey; //タップ中の色
-                              }
-                              return Colors.transparent; //通常時の色（透明色）
-                            },
-                          ),
-                        ),
-                        child: Text('X', textAlign: TextAlign.center,),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all(Colors.black),
-                          backgroundColor: MaterialStateProperty.resolveWith(
-                                (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.pressed)) {
-                                return Colors.grey; //タップ中の色
-                              }
-                              return Colors.transparent; //通常時の色（透明色）
-                            },
-                          ),
-                        ),
-                        child: Text('X', textAlign: TextAlign.center,),
-                      ),
-                    ]
-                ),
+                    ),
+                    child: Text(
+                      'X',
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ]),
               ],
             ),
             Padding(
@@ -520,10 +557,10 @@ class InputterPage extends StatelessWidget {
               children: [
                 ElevatedButton(
                   onPressed: () {},
-                    child: const Text(
-                      '選手交代',
-                      textAlign: TextAlign.center,
-                    ),
+                  child: const Text(
+                    '選手交代',
+                    textAlign: TextAlign.center,
+                  ),
                 ),
                 ElevatedButton(
                   onPressed: () {},
@@ -542,12 +579,11 @@ class InputterPage extends StatelessWidget {
                   Column(
                     children: [
                       SizedBox(
-                        height: 25,
+                          height: 25,
                           child: ElevatedButton(
                             onPressed: () {},
                             child: const Text('リセット'),
-                          )
-                      ),
+                          )),
                       Container(
                         width: 150,
                         height: 150,
@@ -661,8 +697,7 @@ class InputterPage extends StatelessWidget {
                           child: ElevatedButton(
                             onPressed: () {},
                             child: const Text('リセット'),
-                          )
-                      ),
+                          )),
                       Container(
                         width: 150,
                         height: 150,
@@ -672,7 +707,8 @@ class InputterPage extends StatelessWidget {
                         child: Center(
                           child: Column(
                             children: [
-                              Image.asset('images/baseball_ground_illustration.jpeg'),
+                              Image.asset(
+                                  'images/baseball_ground_illustration.jpeg'),
                               // Stack(
                               //   children: [
                               //     Positioned(
@@ -700,6 +736,181 @@ class InputterPage extends StatelessWidget {
                     ],
                   ),
                 ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+              child: Center(
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SizedBox(
+                          width: 90,
+                          height: 45,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.blue,
+                            ),
+                            child: const Text(
+                              '四球',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 90,
+                          height: 45,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.red,
+                            ),
+                            child: const Text(
+                              '三振',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          SizedBox(
+                            width: 90,
+                            height: 45,
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.green,
+                              ),
+                              child: const Text(
+                                '盗塁',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 90,
+                            height: 45,
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.green,
+                              ),
+                              child: const Text(
+                                'バント',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 90,
+                            height: 45,
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.green,
+                              ),
+                              child: const Text(
+                                'デッドボール',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          SizedBox(
+                            width: 90,
+                            height: 45,
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.orange,
+                              ),
+                              child: const Text(
+                                'その他',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 90,
+                            height: 45,
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.blueGrey,
+                              ),
+                              child: const Text(
+                                'チェンジ',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 90,
+                            height: 45,
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.lightBlue,
+                              ),
+                              child: const Text(
+                                '打った',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.only(left: 15.0, top: 10.0, right: 15.0),
+              child: TextField(
+                minLines: 4,
+                maxLines: 4,
+                decoration: InputDecoration(border: OutlineInputBorder(),),
               ),
             ),
           ],
