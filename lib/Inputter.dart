@@ -1,3 +1,4 @@
+import 'package:baseball_score_board/member.dart';
 import 'package:flutter/material.dart';
 
 class InputterPage extends StatelessWidget {
@@ -556,14 +557,24 @@ class InputterPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MemberSheet()),
+                    );
+                  },
                   child: const Text(
                     '選手交代',
                     textAlign: TextAlign.center,
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MemberSheet()),
+                    );
+                  },
                   child: const Text(
                     '選手交代',
                     textAlign: TextAlign.center,
