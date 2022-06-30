@@ -14,3 +14,15 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+## メモ
+・命名の注意点
+「ブランチ名（英数字小文字と"-"）」
+①大文字を使わない
+②'-'以外の記号を使わない（'/'や'#'や'_'）
+
+「file名（英字小文字と"-"もしくは"_"）」
+①数字を使わない
+②大文字を使わない
+③'-','_'以外の記号を使わない
