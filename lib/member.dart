@@ -41,94 +41,173 @@ class MemberSheet extends StatelessWidget {
     },
   ];
 
-  final List<String> list = [
-    'souki',
-    'katou',
-    '21歳',
-  ];
-
   MemberSheet({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // print('memberページ');
-    // print(listItems[0]['name']);
-    // print(listItems.length);
-    // print(list[0]);
     return Scaffold(
-      body: Container(
-        // color: Colors.grey,
-        child: Center(
-          child: Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 15.0, top: 100.0, right: 15.0, ),
-                child: SizedBox(
-                  // height: 900,
-                  child: Column(
-                    children: [
-                      // const Text('スタメン'),
-                      Expanded(
-                        child: ListView.builder(
-                          shrinkWrap: true,
-                          itemCount: listItems.length,
-                          itemBuilder: (context, index) {
-                            return Container(
-                              height: 40,
-                              child: Text(listItems[index]['name']),
-                            );
-                          },
+      body: Center(
+        child: Row(
+          children: [
+            Expanded(
+              child: Padding(
+              padding: const EdgeInsets.only(left: 15.0, top: 100.0, right: 15.0, ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: 133,
+                      height: 50,
+                      alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                      child: const Text(
+                        'スタメン',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
                         ),
                       ),
-                      // ListView.builder(
-                      //   // itemCount: listItems.length,
-                      //   itemCount: list.length,
-                      //   itemBuilder: (context, index) {
-                      //     return ListTile(
-                      //       // title: Text(listItems[index]['name']),
-                      //       title: Text(list[index]),
-                      //     );
-                      //     // return Container(
-                      //     //   height: 50,
-                      //     //   // width: 70,
-                      //     //   color: listItems[index]['color'],
-                      //     //   // child: Row(
-                      //     //   //   children: [
-                      //     //   //     Text(
-                      //     //   //       listItems[index]['name'],
-                      //     //   //     ),
-                      //     //   //     Text(
-                      //     //   //       listItems[index]['position'],
-                      //     //   //     )
-                      //     //   //   ],
-                      //     //   // ),
-                      //     //   child: Text(listItems[index]['name']),
-                      //     // );
-                      //     // return ListTile(
-                      //     //   title: Text(listItems[index]['name']),
-                      //     // );
-                      //   }
-                      // ),
-                    ],
-                  ),
+                    ),
+                    Expanded(
+                      child: ListView.builder(
+                        // shrinkWrap: true,
+                        padding: const EdgeInsets.only(top: 10.0),
+                        itemCount: listItems.length,
+                        itemBuilder: (context, index) {
+                          return Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 3.0, bottom: 5.0),
+                                child: Container(
+                                  width: 100,
+                                  height: 30,
+                                  // color: listItems[index]['color'],
+                                  decoration: BoxDecoration(
+                                    color: listItems[index]['color'],
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Text(
+                                    listItems[index]['name'],
+                                    textAlign: TextAlign.center,
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 5.0),
+                                child: Container(
+                                  width: 30,
+                                  height: 30,
+                                  decoration: BoxDecoration(
+                                    color: listItems[index]['color'],
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Text(
+                                    listItems[index]['position'],
+                                    textAlign: TextAlign.center,
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          );
+                        },
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              // Container(
-              //   height: 500,
-              //   padding: EdgeInsets.all(4),
-              //   Expanded(child: ListView.builder(
-              //     itemCount: listItems.length,
-              //     itemBuilder: (context, index) {
-              //       return Container(
-              //         height: 40,
-              //         child: Text(listItems[index]['name']),
-              //       );
-              //     },
-              //   ),
-              //   ),
-              // )
-            ],
-          ),
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.only(left: 15.0, top: 100.0, right: 15.0, ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: 133,
+                      height: 50,
+                      alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                      child: const Text(
+                        '控え',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: ListView.builder(
+                        // shrinkWrap: true,
+                        padding: const EdgeInsets.only(top: 10.0),
+                        itemCount: listItems.length,
+                        itemBuilder: (context, index) {
+                          return Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 3.0, bottom: 5.0),
+                                child: Container(
+                                  width: 100,
+                                  height: 30,
+                                  // color: listItems[index]['color'],
+                                  decoration: BoxDecoration(
+                                    color: listItems[index]['color'],
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Text(
+                                    listItems[index]['name'],
+                                    textAlign: TextAlign.center,
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 5.0),
+                                child: Container(
+                                  width: 30,
+                                  height: 30,
+                                  decoration: BoxDecoration(
+                                    color: listItems[index]['color'],
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Text(
+                                    listItems[index]['position'],
+                                    textAlign: TextAlign.center,
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          );
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
